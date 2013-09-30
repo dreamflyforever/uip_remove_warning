@@ -1,0 +1,1204 @@
+# 1 "../apps/webserver/httpd.c"
+# 1 "/home/yangshanjjin/test/uip/uip/unix//"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "../apps/webserver/httpd.c"
+# 58 "../apps/webserver/httpd.c"
+# 1 "../uip/uip.h" 1
+# 56 "../uip/uip.h"
+# 1 "../uip/uipopt.h" 1
+# 70 "../uip/uipopt.h"
+# 1 "./uip-conf.h" 1
+# 58 "./uip-conf.h"
+# 1 "/usr/include/inttypes.h" 1 3 4
+# 26 "/usr/include/inttypes.h" 3 4
+# 1 "/usr/include/features.h" 1 3 4
+# 324 "/usr/include/features.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/predefs.h" 1 3 4
+# 325 "/usr/include/features.h" 2 3 4
+# 357 "/usr/include/features.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 1 3 4
+# 378 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 379 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
+# 358 "/usr/include/features.h" 2 3 4
+# 389 "/usr/include/features.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 1 3 4
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 5 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 2 3 4
+
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/gnu/stubs-64.h" 1 3 4
+# 10 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 2 3 4
+# 390 "/usr/include/features.h" 2 3 4
+# 27 "/usr/include/inttypes.h" 2 3 4
+
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h" 1 3 4
+
+
+# 1 "/usr/include/stdint.h" 1 3 4
+# 27 "/usr/include/stdint.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wchar.h" 1 3 4
+# 28 "/usr/include/stdint.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 29 "/usr/include/stdint.h" 2 3 4
+# 37 "/usr/include/stdint.h" 3 4
+typedef signed char int8_t;
+typedef short int int16_t;
+typedef int int32_t;
+
+typedef long int int64_t;
+
+
+
+
+
+
+
+typedef unsigned char uint8_t;
+typedef unsigned short int uint16_t;
+
+typedef unsigned int uint32_t;
+
+
+
+typedef unsigned long int uint64_t;
+# 66 "/usr/include/stdint.h" 3 4
+typedef signed char int_least8_t;
+typedef short int int_least16_t;
+typedef int int_least32_t;
+
+typedef long int int_least64_t;
+
+
+
+
+
+
+typedef unsigned char uint_least8_t;
+typedef unsigned short int uint_least16_t;
+typedef unsigned int uint_least32_t;
+
+typedef unsigned long int uint_least64_t;
+# 91 "/usr/include/stdint.h" 3 4
+typedef signed char int_fast8_t;
+
+typedef long int int_fast16_t;
+typedef long int int_fast32_t;
+typedef long int int_fast64_t;
+# 104 "/usr/include/stdint.h" 3 4
+typedef unsigned char uint_fast8_t;
+
+typedef unsigned long int uint_fast16_t;
+typedef unsigned long int uint_fast32_t;
+typedef unsigned long int uint_fast64_t;
+# 120 "/usr/include/stdint.h" 3 4
+typedef long int intptr_t;
+
+
+typedef unsigned long int uintptr_t;
+# 135 "/usr/include/stdint.h" 3 4
+typedef long int intmax_t;
+typedef unsigned long int uintmax_t;
+# 4 "/usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h" 2 3 4
+# 29 "/usr/include/inttypes.h" 2 3 4
+
+
+
+
+
+
+typedef int __gwchar_t;
+# 274 "/usr/include/inttypes.h" 3 4
+
+
+
+
+
+typedef struct
+  {
+    long int quot;
+    long int rem;
+  } imaxdiv_t;
+# 298 "/usr/include/inttypes.h" 3 4
+extern intmax_t imaxabs (intmax_t __n) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern imaxdiv_t imaxdiv (intmax_t __numer, intmax_t __denom)
+      __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern intmax_t strtoimax (__const char *__restrict __nptr,
+      char **__restrict __endptr, int __base) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern uintmax_t strtoumax (__const char *__restrict __nptr,
+       char ** __restrict __endptr, int __base) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern intmax_t wcstoimax (__const __gwchar_t *__restrict __nptr,
+      __gwchar_t **__restrict __endptr, int __base)
+     __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern uintmax_t wcstoumax (__const __gwchar_t *__restrict __nptr,
+       __gwchar_t ** __restrict __endptr, int __base)
+     __attribute__ ((__nothrow__ , __leaf__));
+# 442 "/usr/include/inttypes.h" 3 4
+
+# 59 "./uip-conf.h" 2
+# 67 "./uip-conf.h"
+typedef uint8_t u8_t;
+# 76 "./uip-conf.h"
+typedef uint16_t u16_t;
+# 86 "./uip-conf.h"
+typedef unsigned short uip_stats_t;
+# 149 "./uip-conf.h"
+# 1 "../apps/webserver/webserver.h" 1
+# 38 "../apps/webserver/webserver.h"
+# 1 "../apps/webserver/httpd.h" 1
+# 38 "../apps/webserver/httpd.h"
+# 1 "../uip/psock.h" 1
+# 84 "../uip/psock.h"
+# 1 "../uip/uipopt.h" 1
+# 85 "../uip/psock.h" 2
+# 1 "../uip/pt.h" 1
+# 52 "../uip/pt.h"
+# 1 "../uip/lc.h" 1
+# 125 "../uip/lc.h"
+# 1 "../uip/lc-switch.h" 1
+# 64 "../uip/lc-switch.h"
+typedef unsigned short lc_t;
+# 126 "../uip/lc.h" 2
+# 53 "../uip/pt.h" 2
+
+struct pt {
+  lc_t lc;
+};
+# 86 "../uip/psock.h" 2
+# 95 "../uip/psock.h"
+struct psock_buf {
+  u8_t *ptr;
+  unsigned short left;
+};
+
+
+
+
+
+
+
+struct psock {
+  struct pt pt, psockpt;
+
+
+  const u8_t *sendptr;
+  u8_t *readptr;
+
+  char *bufptr;
+
+
+  u16_t sendlen;
+  u16_t readlen;
+
+  struct psock_buf buf;
+
+  unsigned int bufsize;
+
+  unsigned char state;
+};
+
+void psock_init(struct psock *psock, char *buffer, unsigned int buffersize);
+# 160 "../uip/psock.h"
+char psock_send(struct psock *psock, const char *buf, unsigned int len);
+# 194 "../uip/psock.h"
+char psock_generator_send(struct psock *psock, unsigned short (*f)(void *), void *arg)
+                                            ;
+# 237 "../uip/psock.h"
+char psock_readbuf(struct psock *psock);
+# 253 "../uip/psock.h"
+char psock_readto(struct psock *psock, unsigned char c);
+# 283 "../uip/psock.h"
+u16_t psock_datalen(struct psock *psock);
+# 327 "../uip/psock.h"
+char psock_newdata(struct psock *s);
+# 39 "../apps/webserver/httpd.h" 2
+# 1 "../apps/webserver/httpd-fs.h" 1
+# 40 "../apps/webserver/httpd-fs.h"
+struct httpd_fs_file {
+  char *data;
+  int len;
+};
+
+
+
+int httpd_fs_open(const char *name, struct httpd_fs_file *file);
+
+
+
+u16_t httpd_fs_count(char *name);
+
+
+
+void httpd_fs_init(void);
+# 40 "../apps/webserver/httpd.h" 2
+
+struct httpd_state {
+  unsigned char timer;
+  struct psock sin, sout;
+  struct pt outputpt, scriptpt;
+  char inputbuf[50];
+  char filename[20];
+  char state;
+  struct httpd_fs_file file;
+  int len;
+  char *scriptptr;
+  int scriptlen;
+
+  unsigned short count;
+};
+
+void httpd_init(void);
+void httpd_appcall(void);
+
+void httpd_log(char *msg);
+void httpd_log_file(u16_t *requester, char *file);
+# 39 "../apps/webserver/webserver.h" 2
+
+typedef struct httpd_state uip_tcp_appstate_t;
+# 150 "./uip-conf.h" 2
+# 71 "../uip/uipopt.h" 2
+# 434 "../uip/uipopt.h"
+void uip_log(char *msg);
+# 57 "../uip/uip.h" 2
+
+
+
+
+
+typedef u16_t uip_ip4addr_t[2];
+typedef u16_t uip_ip6addr_t[8];
+
+
+
+typedef uip_ip4addr_t uip_ipaddr_t;
+# 188 "../uip/uip.h"
+void uip_init(void);
+
+
+
+
+
+
+void uip_setipid(u16_t id);
+# 422 "../uip/uip.h"
+extern u8_t uip_buf[420 +2];
+# 450 "../uip/uip.h"
+void uip_listen(u16_t port);
+# 464 "../uip/uip.h"
+void uip_unlisten(u16_t port);
+# 498 "../uip/uip.h"
+struct uip_conn *uip_connect(uip_ipaddr_t *ripaddr, u16_t port);
+# 538 "../uip/uip.h"
+void uip_send(const void *data, int len);
+# 766 "../uip/uip.h"
+struct uip_udp_conn *uip_udp_new(uip_ipaddr_t *ripaddr, u16_t rport);
+# 1084 "../uip/uip.h"
+u16_t htons(u16_t val);
+# 1099 "../uip/uip.h"
+extern void *uip_appdata;
+# 1134 "../uip/uip.h"
+extern u16_t uip_len;
+# 1153 "../uip/uip.h"
+struct uip_conn {
+  uip_ipaddr_t ripaddr;
+
+  u16_t lport;
+  u16_t rport;
+
+
+  u8_t rcv_nxt[4];
+
+  u8_t snd_nxt[4];
+
+  u16_t len;
+  u16_t mss;
+
+  u16_t initialmss;
+
+  u8_t sa;
+
+  u8_t sv;
+
+  u8_t rto;
+  u8_t tcpstateflags;
+  u8_t timer;
+  u8_t nrtx;
+
+
+
+  uip_tcp_appstate_t appstate;
+};
+# 1190 "../uip/uip.h"
+extern struct uip_conn *uip_conn;
+
+extern struct uip_conn uip_conns[40];
+# 1201 "../uip/uip.h"
+extern u8_t uip_acc32[4];
+# 1232 "../uip/uip.h"
+struct uip_stats {
+  struct {
+    uip_stats_t drop;
+
+    uip_stats_t recv;
+
+    uip_stats_t sent;
+
+    uip_stats_t vhlerr;
+
+    uip_stats_t hblenerr;
+
+    uip_stats_t lblenerr;
+
+    uip_stats_t fragerr;
+
+    uip_stats_t chkerr;
+
+    uip_stats_t protoerr;
+
+  } ip;
+  struct {
+    uip_stats_t drop;
+    uip_stats_t recv;
+    uip_stats_t sent;
+    uip_stats_t typeerr;
+
+  } icmp;
+  struct {
+    uip_stats_t drop;
+    uip_stats_t recv;
+    uip_stats_t sent;
+    uip_stats_t chkerr;
+
+    uip_stats_t ackerr;
+
+    uip_stats_t rst;
+    uip_stats_t rexmit;
+    uip_stats_t syndrop;
+
+    uip_stats_t synrst;
+
+  } tcp;
+# 1284 "../uip/uip.h"
+};
+
+
+
+
+
+
+extern struct uip_stats uip_stat;
+# 1305 "../uip/uip.h"
+extern u8_t uip_flags;
+# 1347 "../uip/uip.h"
+void uip_process(u8_t flag);
+# 1386 "../uip/uip.h"
+struct uip_tcpip_hdr {
+# 1397 "../uip/uip.h"
+  u8_t vhl,
+    tos,
+    len[2],
+    ipid[2],
+    ipoffset[2],
+    ttl,
+    proto;
+  u16_t ipchksum;
+  u16_t srcipaddr[2],
+    destipaddr[2];
+
+
+
+  u16_t srcport,
+    destport;
+  u8_t seqno[4],
+    ackno[4],
+    tcpoffset,
+    flags,
+    wnd[2];
+  u16_t tcpchksum;
+  u8_t urgp[2];
+  u8_t optdata[4];
+};
+
+
+struct uip_icmpip_hdr {
+# 1434 "../uip/uip.h"
+  u8_t vhl,
+    tos,
+    len[2],
+    ipid[2],
+    ipoffset[2],
+    ttl,
+    proto;
+  u16_t ipchksum;
+  u16_t srcipaddr[2],
+    destipaddr[2];
+
+
+
+  u8_t type, icode;
+  u16_t icmpchksum;
+
+  u16_t id, seqno;
+
+
+
+
+
+};
+
+
+
+struct uip_udpip_hdr {
+# 1471 "../uip/uip.h"
+  u8_t vhl,
+    tos,
+    len[2],
+    ipid[2],
+    ipoffset[2],
+    ttl,
+    proto;
+  u16_t ipchksum;
+  u16_t srcipaddr[2],
+    destipaddr[2];
+
+
+
+  u16_t srcport,
+    destport;
+  u16_t udplen;
+  u16_t udpchksum;
+};
+# 1534 "../uip/uip.h"
+extern uip_ipaddr_t uip_hostaddr, uip_netmask, uip_draddr;
+
+
+
+
+
+
+
+struct uip_eth_addr {
+  u8_t addr[6];
+};
+# 1562 "../uip/uip.h"
+u16_t uip_chksum(u16_t *buf, u16_t len);
+# 1573 "../uip/uip.h"
+u16_t uip_ipchksum(void);
+# 1584 "../uip/uip.h"
+u16_t uip_tcpchksum(void);
+# 1595 "../uip/uip.h"
+u16_t uip_udpchksum(void);
+# 59 "../apps/webserver/httpd.c" 2
+
+
+# 1 "../apps/webserver/httpd-cgi.h" 1
+# 56 "../apps/webserver/httpd-cgi.h"
+typedef char (* httpd_cgifunction)(struct httpd_state *, char *);
+
+httpd_cgifunction httpd_cgi(char *name);
+
+struct httpd_cgi_call {
+  const char *name;
+  const httpd_cgifunction function;
+};
+# 81 "../apps/webserver/httpd-cgi.h"
+void httpd_cgi_init(void);
+# 62 "../apps/webserver/httpd.c" 2
+# 1 "../apps/webserver/http-strings.h" 1
+extern const char http_http[8];
+extern const char http_200[5];
+extern const char http_301[5];
+extern const char http_302[5];
+extern const char http_get[5];
+extern const char http_10[9];
+extern const char http_11[9];
+extern const char http_content_type[15];
+extern const char http_texthtml[10];
+extern const char http_location[11];
+extern const char http_host[7];
+extern const char http_crnl[3];
+extern const char http_index_html[12];
+extern const char http_404_html[10];
+extern const char http_referer[9];
+extern const char http_header_200[84];
+extern const char http_header_404[91];
+extern const char http_content_type_plain[29];
+extern const char http_content_type_html[28];
+extern const char http_content_type_css [27];
+extern const char http_content_type_text[28];
+extern const char http_content_type_png [28];
+extern const char http_content_type_gif [28];
+extern const char http_content_type_jpg [29];
+extern const char http_content_type_binary[43];
+extern const char http_html[6];
+extern const char http_shtml[7];
+extern const char http_htm[5];
+extern const char http_css[5];
+extern const char http_png[5];
+extern const char http_gif[5];
+extern const char http_jpg[5];
+extern const char http_text[5];
+extern const char http_txt[5];
+# 63 "../apps/webserver/httpd.c" 2
+
+# 1 "/usr/include/string.h" 1 3 4
+# 29 "/usr/include/string.h" 3 4
+
+
+
+
+
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.6/include/stddef.h" 1 3 4
+# 212 "/usr/lib/gcc/x86_64-linux-gnu/4.6/include/stddef.h" 3 4
+typedef long unsigned int size_t;
+# 35 "/usr/include/string.h" 2 3 4
+
+
+
+
+
+
+
+
+
+extern void *memcpy (void *__restrict __dest,
+       __const void *__restrict __src, size_t __n)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern void *memmove (void *__dest, __const void *__src, size_t __n)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+
+
+
+extern void *memccpy (void *__restrict __dest, __const void *__restrict __src,
+        int __c, size_t __n)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+
+
+extern void *memset (void *__s, int __c, size_t __n) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
+
+
+extern int memcmp (__const void *__s1, __const void *__s2, size_t __n)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+# 95 "/usr/include/string.h" 3 4
+extern void *memchr (__const void *__s, int __c, size_t __n)
+      __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+
+
+# 126 "/usr/include/string.h" 3 4
+
+
+extern char *strcpy (char *__restrict __dest, __const char *__restrict __src)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
+
+extern char *strncpy (char *__restrict __dest,
+        __const char *__restrict __src, size_t __n)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern char *strcat (char *__restrict __dest, __const char *__restrict __src)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
+
+extern char *strncat (char *__restrict __dest, __const char *__restrict __src,
+        size_t __n) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern int strcmp (__const char *__s1, __const char *__s2)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+extern int strncmp (__const char *__s1, __const char *__s2, size_t __n)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern int strcoll (__const char *__s1, __const char *__s2)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+extern size_t strxfrm (char *__restrict __dest,
+         __const char *__restrict __src, size_t __n)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (2)));
+
+
+
+
+
+
+# 1 "/usr/include/xlocale.h" 1 3 4
+# 28 "/usr/include/xlocale.h" 3 4
+typedef struct __locale_struct
+{
+
+  struct __locale_data *__locales[13];
+
+
+  const unsigned short int *__ctype_b;
+  const int *__ctype_tolower;
+  const int *__ctype_toupper;
+
+
+  const char *__names[13];
+} *__locale_t;
+
+
+typedef __locale_t locale_t;
+# 163 "/usr/include/string.h" 2 3 4
+
+
+extern int strcoll_l (__const char *__s1, __const char *__s2, __locale_t __l)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2, 3)));
+
+extern size_t strxfrm_l (char *__dest, __const char *__src, size_t __n,
+    __locale_t __l) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (2, 4)));
+
+
+
+
+
+extern char *strdup (__const char *__s)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__malloc__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+
+extern char *strndup (__const char *__string, size_t __n)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__malloc__)) __attribute__ ((__nonnull__ (1)));
+# 210 "/usr/include/string.h" 3 4
+
+# 235 "/usr/include/string.h" 3 4
+extern char *strchr (__const char *__s, int __c)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+# 262 "/usr/include/string.h" 3 4
+extern char *strrchr (__const char *__s, int __c)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+
+
+# 281 "/usr/include/string.h" 3 4
+
+
+
+extern size_t strcspn (__const char *__s, __const char *__reject)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern size_t strspn (__const char *__s, __const char *__accept)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+# 314 "/usr/include/string.h" 3 4
+extern char *strpbrk (__const char *__s, __const char *__accept)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+# 342 "/usr/include/string.h" 3 4
+extern char *strstr (__const char *__haystack, __const char *__needle)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+
+extern char *strtok (char *__restrict __s, __const char *__restrict __delim)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (2)));
+
+
+
+
+extern char *__strtok_r (char *__restrict __s,
+    __const char *__restrict __delim,
+    char **__restrict __save_ptr)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (2, 3)));
+
+extern char *strtok_r (char *__restrict __s, __const char *__restrict __delim,
+         char **__restrict __save_ptr)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (2, 3)));
+# 397 "/usr/include/string.h" 3 4
+
+
+extern size_t strlen (__const char *__s)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+extern size_t strnlen (__const char *__string, size_t __maxlen)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+extern char *strerror (int __errnum) __attribute__ ((__nothrow__ , __leaf__));
+
+# 427 "/usr/include/string.h" 3 4
+extern int strerror_r (int __errnum, char *__buf, size_t __buflen) __asm__ ("" "__xpg_strerror_r") __attribute__ ((__nothrow__ , __leaf__))
+
+                        __attribute__ ((__nonnull__ (2)));
+# 445 "/usr/include/string.h" 3 4
+extern char *strerror_l (int __errnum, __locale_t __l) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+
+extern void __bzero (void *__s, size_t __n) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+extern void bcopy (__const void *__src, void *__dest, size_t __n)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern void bzero (void *__s, size_t __n) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
+
+
+extern int bcmp (__const void *__s1, __const void *__s2, size_t __n)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+# 489 "/usr/include/string.h" 3 4
+extern char *index (__const char *__s, int __c)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+# 517 "/usr/include/string.h" 3 4
+extern char *rindex (__const char *__s, int __c)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern int ffs (int __i) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+# 536 "/usr/include/string.h" 3 4
+extern int strcasecmp (__const char *__s1, __const char *__s2)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern int strncasecmp (__const char *__s1, __const char *__s2, size_t __n)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+# 559 "/usr/include/string.h" 3 4
+extern char *strsep (char **__restrict __stringp,
+       __const char *__restrict __delim)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+
+extern char *strsignal (int __sig) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern char *__stpcpy (char *__restrict __dest, __const char *__restrict __src)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
+extern char *stpcpy (char *__restrict __dest, __const char *__restrict __src)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+extern char *__stpncpy (char *__restrict __dest,
+   __const char *__restrict __src, size_t __n)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
+extern char *stpncpy (char *__restrict __dest,
+        __const char *__restrict __src, size_t __n)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
+# 642 "/usr/include/string.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/string3.h" 1 3 4
+# 23 "/usr/include/x86_64-linux-gnu/bits/string3.h" 3 4
+extern void __warn_memset_zero_len (void) __attribute__((__warning__ ("memset used with constant zero length parameter; this could be due to transposed parameters")))
+                                                                                                   ;
+# 48 "/usr/include/x86_64-linux-gnu/bits/string3.h" 3 4
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__artificial__)) void *
+__attribute__ ((__nothrow__ , __leaf__)) memcpy (void *__restrict __dest, __const void *__restrict __src, size_t __len)
+
+{
+  return __builtin___memcpy_chk (__dest, __src, __len, __builtin_object_size (__dest, 0));
+}
+
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__artificial__)) void *
+__attribute__ ((__nothrow__ , __leaf__)) memmove (void *__dest, __const void *__src, size_t __len)
+{
+  return __builtin___memmove_chk (__dest, __src, __len, __builtin_object_size (__dest, 0));
+}
+# 76 "/usr/include/x86_64-linux-gnu/bits/string3.h" 3 4
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__artificial__)) void *
+__attribute__ ((__nothrow__ , __leaf__)) memset (void *__dest, int __ch, size_t __len)
+{
+  if (__builtin_constant_p (__len) && __len == 0
+      && (!__builtin_constant_p (__ch) || __ch != 0))
+    {
+      __warn_memset_zero_len ();
+      return __dest;
+    }
+  return __builtin___memset_chk (__dest, __ch, __len, __builtin_object_size (__dest, 0));
+}
+
+
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__artificial__)) void
+__attribute__ ((__nothrow__ , __leaf__)) bcopy (__const void *__src, void *__dest, size_t __len)
+{
+  (void) __builtin___memmove_chk (__dest, __src, __len, __builtin_object_size (__dest, 0));
+}
+
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__artificial__)) void
+__attribute__ ((__nothrow__ , __leaf__)) bzero (void *__dest, size_t __len)
+{
+  (void) __builtin___memset_chk (__dest, '\0', __len, __builtin_object_size (__dest, 0));
+}
+
+
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__artificial__)) char *
+__attribute__ ((__nothrow__ , __leaf__)) strcpy (char *__restrict __dest, __const char *__restrict __src)
+{
+  return __builtin___strcpy_chk (__dest, __src, __builtin_object_size (__dest, 2 > 1));
+}
+# 117 "/usr/include/x86_64-linux-gnu/bits/string3.h" 3 4
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__artificial__)) char *
+__attribute__ ((__nothrow__ , __leaf__)) strncpy (char *__restrict __dest, __const char *__restrict __src, size_t __len)
+
+{
+  return __builtin___strncpy_chk (__dest, __src, __len, __builtin_object_size (__dest, 2 > 1));
+}
+
+
+extern char *__stpncpy_chk (char *__dest, __const char *__src, size_t __n,
+       size_t __destlen) __attribute__ ((__nothrow__ , __leaf__));
+extern char *__stpncpy_alias (char *__dest, __const char *__src, size_t __n) __asm__ ("" "stpncpy") __attribute__ ((__nothrow__ , __leaf__))
+
+                                 ;
+
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__artificial__)) char *
+__attribute__ ((__nothrow__ , __leaf__)) stpncpy (char *__dest, __const char *__src, size_t __n)
+{
+  if (__builtin_object_size (__dest, 2 > 1) != (size_t) -1
+      && (!__builtin_constant_p (__n) || __n <= __builtin_object_size (__dest, 2 > 1)))
+    return __stpncpy_chk (__dest, __src, __n, __builtin_object_size (__dest, 2 > 1));
+  return __stpncpy_alias (__dest, __src, __n);
+}
+
+
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__artificial__)) char *
+__attribute__ ((__nothrow__ , __leaf__)) strcat (char *__restrict __dest, __const char *__restrict __src)
+{
+  return __builtin___strcat_chk (__dest, __src, __builtin_object_size (__dest, 2 > 1));
+}
+
+
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__artificial__)) char *
+__attribute__ ((__nothrow__ , __leaf__)) strncat (char *__restrict __dest, __const char *__restrict __src, size_t __len)
+
+{
+  return __builtin___strncat_chk (__dest, __src, __len, __builtin_object_size (__dest, 2 > 1));
+}
+# 643 "/usr/include/string.h" 2 3 4
+
+
+
+
+# 65 "../apps/webserver/httpd.c" 2
+# 79 "../apps/webserver/httpd.c"
+static unsigned short
+generate_part_of_file(void *state)
+{
+  struct httpd_state *s = (struct httpd_state *)state;
+
+  if(s->file.len > (uip_conn->mss)) {
+    s->len = (uip_conn->mss);
+  } else {
+    s->len = s->file.len;
+  }
+  memcpy(uip_appdata, s->file.data, s->len);
+
+  return s->len;
+}
+
+static
+char send_file(struct httpd_state *s)
+{
+  { char PT_YIELD_FLAG = 1; switch((&((&s->sout)->pt))->lc) { case 0:;
+
+  do {
+    do { (((&((&s->sout)->pt))))->lc = 100; case 100:; if(!(!(((psock_generator_send(&s->sout, generate_part_of_file, s)) == 0)))) { return 0; } } while(0);
+    s->file.len -= s->len;
+    s->file.data += s->len;
+  } while(s->file.len > 0);
+
+  }; PT_YIELD_FLAG = 0; (&((&s->sout)->pt))->lc = 0;; return 2; };
+}
+
+static
+char send_part_of_file(struct httpd_state *s)
+{
+  { char PT_YIELD_FLAG = 1; switch((&((&s->sout)->pt))->lc) { case 0:;
+
+  do { (((&((&s->sout)->pt))))->lc = 113; case 113:; if(!(!(((psock_send(&s->sout, s->file.data, s->len)) == 0)))) { return 0; } } while(0);
+
+  }; PT_YIELD_FLAG = 0; (&((&s->sout)->pt))->lc = 0;; return 2; };
+}
+
+static void
+next_scriptstate(struct httpd_state *s)
+{
+  char *p;
+  p = strchr(s->scriptptr, 0x0a) + 1;
+  s->scriptlen -= (unsigned short)(p - s->scriptptr);
+  s->scriptptr = p;
+}
+
+static
+char handle_script(struct httpd_state *s)
+{
+  char *ptr;
+
+  { char PT_YIELD_FLAG = 1; switch((&s->scriptpt)->lc) { case 0:;
+
+
+  while(s->file.len > 0) {
+
+
+    if(*s->file.data == 0x25 &&
+       *(s->file.data + 1) == 0x21) {
+      s->scriptptr = s->file.data + 3;
+      s->scriptlen = s->file.len - 3;
+      if(*(s->scriptptr - 1) == 0x3a) {
+ httpd_fs_open(s->scriptptr + 1, &s->file);
+ do { (((&s->scriptpt)))->lc = 144; case 144:; if(!(!(((send_file(s)) == 0)))) { return 0; } } while(0);
+      } else {
+ do { (((&s->scriptpt)))->lc =
+ 147
+# 146 "../apps/webserver/httpd.c"
+ ; case
+ 147
+# 146 "../apps/webserver/httpd.c"
+ :; if(!(!(((httpd_cgi(s->scriptptr)(s, s->scriptptr)) == 0)))) { return 0; } } while(0)
+                                                  ;
+      }
+      next_scriptstate(s);
+
+
+
+      s->file.data = s->scriptptr;
+      s->file.len = s->scriptlen;
+    } else {
+
+
+
+      if(s->file.len > (uip_conn->mss)) {
+ s->len = (uip_conn->mss);
+      } else {
+ s->len = s->file.len;
+      }
+
+      if(*s->file.data == 0x25) {
+ ptr = strchr(s->file.data + 1, 0x25);
+      } else {
+ ptr = strchr(s->file.data, 0x25);
+      }
+      if(ptr != ((void *)0) &&
+  ptr != s->file.data) {
+ s->len = (int)(ptr - s->file.data);
+ if(s->len >= (uip_conn->mss)) {
+   s->len = (uip_conn->mss);
+ }
+      }
+      do { (((&s->scriptpt)))->lc = 177; case 177:; if(!(!(((send_part_of_file(s)) == 0)))) { return 0; } } while(0);
+      s->file.data += s->len;
+      s->file.len -= s->len;
+
+    }
+  }
+
+  }; PT_YIELD_FLAG = 0; (&s->scriptpt)->lc = 0;; return 2; };
+}
+
+static
+char send_headers(struct httpd_state *s, const char *statushdr)
+{
+  char *ptr;
+
+  { char PT_YIELD_FLAG = 1; switch((&((&s->sout)->pt))->lc) { case 0:;
+
+  do { (((&((&s->sout)->pt))))->lc = 194; case 194:; if(!(!(((psock_send(&s->sout, statushdr, strlen(statushdr))) == 0)))) { return 0; } } while(0);
+
+  ptr = strrchr(s->filename, 0x2e);
+  if(ptr == ((void *)0)) {
+    do { (((&((&s->sout)->pt))))->lc = 198; case 198:; if(!(!(((psock_send(&s->sout, http_content_type_binary, strlen(http_content_type_binary))) == 0)))) { return 0; } } while(0);
+  } else if(strncmp(http_html, ptr, 5) == 0 ||
+     strncmp(http_shtml, ptr, 6) == 0) {
+    do { (((&((&s->sout)->pt))))->lc = 201; case 201:; if(!(!(((psock_send(&s->sout, http_content_type_html, strlen(http_content_type_html))) == 0)))) { return 0; } } while(0);
+  } else if(strncmp(http_css, ptr, 4) == 0) {
+    do { (((&((&s->sout)->pt))))->lc = 203; case 203:; if(!(!(((psock_send(&s->sout, http_content_type_css, strlen(http_content_type_css))) == 0)))) { return 0; } } while(0);
+  } else if(strncmp(http_png, ptr, 4) == 0) {
+    do { (((&((&s->sout)->pt))))->lc = 205; case 205:; if(!(!(((psock_send(&s->sout, http_content_type_png, strlen(http_content_type_png))) == 0)))) { return 0; } } while(0);
+  } else if(strncmp(http_gif, ptr, 4) == 0) {
+    do { (((&((&s->sout)->pt))))->lc = 207; case 207:; if(!(!(((psock_send(&s->sout, http_content_type_gif, strlen(http_content_type_gif))) == 0)))) { return 0; } } while(0);
+  } else if(strncmp(http_jpg, ptr, 4) == 0) {
+    do { (((&((&s->sout)->pt))))->lc = 209; case 209:; if(!(!(((psock_send(&s->sout, http_content_type_jpg, strlen(http_content_type_jpg))) == 0)))) { return 0; } } while(0);
+  } else {
+    do { (((&((&s->sout)->pt))))->lc = 211; case 211:; if(!(!(((psock_send(&s->sout, http_content_type_plain, strlen(http_content_type_plain))) == 0)))) { return 0; } } while(0);
+  }
+  }; PT_YIELD_FLAG = 0; (&((&s->sout)->pt))->lc = 0;; return 2; };
+}
+
+static
+char handle_output(struct httpd_state *s)
+{
+  char *ptr;
+
+  { char PT_YIELD_FLAG = 1; switch((&s->outputpt)->lc) { case 0:;
+
+  if(!httpd_fs_open(s->filename, &s->file)) {
+    httpd_fs_open(http_404_html, &s->file);
+    strcpy(s->filename, http_404_html);
+    do { (((&s->outputpt)))->lc =
+
+ 228
+# 226 "../apps/webserver/httpd.c"
+    ; case
+
+ 228
+# 226 "../apps/webserver/httpd.c"
+    :; if(!(!(((send_headers(s, http_header_404)) == 0)))) { return 0; } } while(0)
+
+                      ;
+    do { (((&s->outputpt)))->lc =
+ 230
+# 229 "../apps/webserver/httpd.c"
+    ; case
+ 230
+# 229 "../apps/webserver/httpd.c"
+    :; if(!(!(((send_file(s)) == 0)))) { return 0; } } while(0)
+                  ;
+  } else {
+    do { (((&s->outputpt)))->lc =
+
+ 234
+# 232 "../apps/webserver/httpd.c"
+    ; case
+
+ 234
+# 232 "../apps/webserver/httpd.c"
+    :; if(!(!(((send_headers(s, http_header_200)) == 0)))) { return 0; } } while(0)
+
+                      ;
+    ptr = strchr(s->filename, 0x2e);
+    if(ptr != ((void *)0) && strncmp(ptr, http_shtml, 6) == 0) {
+      (&s->scriptpt)->lc = 0;;
+      do { (((&s->outputpt)))->lc = 238; case 238:; if(!(!(((handle_script(s)) == 0)))) { return 0; } } while(0);
+    } else {
+      do { (((&s->outputpt)))->lc =
+ 241
+# 240 "../apps/webserver/httpd.c"
+      ; case
+ 241
+# 240 "../apps/webserver/httpd.c"
+      :; if(!(!(((send_file(s)) == 0)))) { return 0; } } while(0)
+                    ;
+    }
+  }
+  (uip_flags = 16);
+  }; PT_YIELD_FLAG = 0; (&s->outputpt)->lc = 0;; return 2; };
+}
+
+static
+char handle_input(struct httpd_state *s)
+{
+  { char PT_YIELD_FLAG = 1; switch((&((&s->sin)->pt))->lc) { case 0:;
+
+  do { (((&((&s->sin)->pt))))->lc = 253; case 253:; if(!(!(((psock_readto(&s->sin, 0x20)) == 0)))) { return 0; } } while(0);
+
+
+  if(strncmp(s->inputbuf, http_get, 4) != 0) {
+    do { (uip_flags = 16); do { (&((&s->sin)->pt))->lc = 0;; return 1; } while(0); } while(0);
+  }
+  do { (((&((&s->sin)->pt))))->lc = 259; case 259:; if(!(!(((psock_readto(&s->sin, 0x20)) == 0)))) { return 0; } } while(0);
+
+  if(s->inputbuf[0] != 0x2f) {
+    do { (uip_flags = 16); do { (&((&s->sin)->pt))->lc = 0;; return 1; } while(0); } while(0);
+  }
+
+  if(s->inputbuf[1] == 0x20) {
+    strncpy(s->filename, http_index_html, sizeof(s->filename));
+  } else {
+    s->inputbuf[psock_datalen(&s->sin) - 1] = 0;
+    strncpy(s->filename, &s->inputbuf[0], sizeof(s->filename));
+  }
+
+
+
+  s->state = 1;
+
+  while(1) {
+    do { (((&((&s->sin)->pt))))->lc = 277; case 277:; if(!(!(((psock_readto(&s->sin, 0x0a)) == 0)))) { return 0; } } while(0);
+
+    if(strncmp(s->inputbuf, http_referer, 8) == 0) {
+      s->inputbuf[psock_datalen(&s->sin) - 2] = 0;
+
+    }
+  }
+
+  }; PT_YIELD_FLAG = 0; (&((&s->sin)->pt))->lc = 0;; return 2; };
+}
+
+static void
+handle_connection(struct httpd_state *s)
+{
+  handle_input(s);
+  if(s->state == 1) {
+    handle_output(s);
+  }
+}
+
+void
+httpd_appcall(void)
+{
+  struct httpd_state *s = (struct httpd_state *)&(uip_conn->appstate);
+
+  if((uip_flags & 16) || (uip_flags & 32) || (uip_flags & 128)) {
+  } else if((uip_flags & 64)) {
+    psock_init(&s->sin, s->inputbuf, sizeof(s->inputbuf) - 1);
+    psock_init(&s->sout, s->inputbuf, sizeof(s->inputbuf) - 1);
+    (&s->outputpt)->lc = 0;;
+    s->state = 0;
+
+    s->timer = 0;
+    handle_connection(s);
+  } else if(s != ((void *)0)) {
+    if((uip_flags & 8)) {
+      ++s->timer;
+      if(s->timer >= 20) {
+ (uip_flags = 32);
+      }
+    } else {
+      s->timer = 0;
+    }
+    handle_connection(s);
+  } else {
+    (uip_flags = 32);
+  }
+}
+
+
+
+
+
+
+
+void
+httpd_init(void)
+{
+  uip_listen((u16_t)((((u16_t) (80)) << 8) | (((u16_t) (80)) >> 8)));
+}
